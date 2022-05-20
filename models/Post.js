@@ -1,4 +1,4 @@
-const mongoose = require ("mongoose");
+/*const mongoose = require ("mongoose");
 const PostSchema = new mongoose.Schema({
   user : {
     type : mongoose.Schema.Types.ObjectId ,
@@ -21,4 +21,4 @@ img: {
   type: String,
 },
 });
-module.exports =Post = mongoose.model("post", PostSchema);
+module.exports =Post = mongoose.model("post", PostSchema);*/

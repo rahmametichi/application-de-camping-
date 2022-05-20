@@ -10,8 +10,8 @@ const router = require("express").Router();
 
 router.post("/register", async (req, res) => {
   try {
-    const { fullName, email, password, phoneNumber } = req.body;
-    const existingUser = await User.findOne({ email: email });
+    const {username, password, Confirmepaasword } = req.body;
+    const existingUser = await User.findOne({ username: username });
     if (existingUser) {
       res.status(400).json({ status: true, msg: "User Already Exists !!!" });
     }
@@ -19,9 +19,8 @@ router.post("/register", async (req, res) => {
     const salt = await bcrypt.genSalt(10);
     const hashedPassword = await bcrypt.hash(password, salt);
     const user = await User.create({
-      fullName,
-      email,
-      phoneNumber,
+      username,
+      Confirmepaasword ,
       password: hashedPassword,
     });
     res
@@ -37,10 +36,10 @@ router.post("/register", async (req, res) => {
 // @path : /login
 
 router.post("/login", async (req, res) => {
-  const { email, password } = req.body;
+  const { username, password } = req.body;
   try {
     // verifying the user exists or not
-    const user = await User.findOne({ email: email });
+    const user = await User.findOne({ username: username});
     if (user) {
       // comparing the passwords
       const comparedPasswords = await bcrypt.compare(password, user.password);

@@ -1,4 +1,4 @@
-const Post = require("../models/Post");
+/*const Post = require("../models/Post");
 const router = require('express').Router();
 const verifyToken = require("../middlewares/verifyToken");
 const User = require("../models/User");
@@ -101,4 +101,4 @@ router.post('/createPost' , isAuth,uploadPost.single("img"), async(req,res)=>{
 
 
 
-    module.exports = router;
+    module.exports = router;*/

@@ -1,4 +1,4 @@
-const mongoose= require("mongoose");
+/*const mongoose= require("mongoose");
 const Product = new mongoose.Schema(
   {
     name: {
@@ -8,10 +8,7 @@ const Product = new mongoose.Schema(
     },
     varients: [],
     prices: [],
-    category: {
-      type: String,
-      required: true,
-    },
+
     image: {
       type: String,
       required: true,
@@ -23,4 +20,4 @@ const Product = new mongoose.Schema(
   },
   { timestamps: true }
 );
-module.exports = mongoose.model("product", Product);
+module.exports = mongoose.model("product", Product);*/

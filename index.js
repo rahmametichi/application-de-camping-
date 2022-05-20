@@ -11,9 +11,9 @@ const MONGO_URI = process.env.MONGO_URI
 //  middlewares
 app.use(express.json());
 app.use('/api/auth',require("./routes"));
-app.use("/api/users", require("./routes/profile"));
+/*app.use("/api/users", require("./routes/profile"));
 app.use("/api/Post", require("./routes/post"));
-app.use("/api/Product",require ("./routes/Product"));
+app.use("/api/Product",require ("./routes/Product"));*/
 
 
 // database

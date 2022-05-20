@@ -1,4 +1,4 @@
-const router = require("express").Router();
+/*const router = require("express").Router();
 const Profile = require("../models/Profile");
 const verifyToken = require("../middlewares/verifyToken");
 const User = require("../models/User");
@@ -92,4 +92,4 @@ router.delete("/deleteprofile/:id", async (req, res) => {
   }
 });
 
-module.exports = router;
+module.exports = router;*/
